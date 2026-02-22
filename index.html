@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ATM Machine</title>
+  <link rel="stylesheet" href="ss.css" />
+</head>
+<body>
+  <div class="atm-container">
+    <h2>ATM Machine</h2>
+    
+    <div id="login-section">
+      <p>Enter PIN:</p>
+      <input type="password" id="pin" maxlength="4"/>
+      <button onclick="login()">Login</button>
+    </div>
+
+    <div id="menu-section" class="hidden">
+      <p id="welcome"></p>
+      <button onclick="checkBalance()">Check Balance</button>
+      <button onclick="withdraw()">Withdraw</button>
+      <button onclick="deposit()">Deposit</button>
+      <button onclick="logout()">Logout</button>
+      <p id="message"></p>
+    </div>
+  </div>
+
+  <script src="ss.js"></script>
+</body>
+</html>
